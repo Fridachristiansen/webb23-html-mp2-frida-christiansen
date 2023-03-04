@@ -1,0 +1,163 @@
+body {
+    background-image: url(/bildmapp/ruths-malmö.jpeg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    overflow-y: scroll;
+}
+:root {
+    --my-color: #0e004d;
+    --padding: 50%;
+}
+
+.flex-container {
+    filter: invert(1);
+    display: flex;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+.sidebar a {
+    color: white;
+    padding: 0px;
+    text-decoration: none;
+    font-size: 4rem;
+    font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+
+.sidebar a:hover {
+    background-color: #0e004d;
+    transition: 0.4s;
+    border-radius: 20%;
+}
+
+section {
+    display: flex;
+    margin: auto;
+    width: 40%;
+    height: 40%;
+    justify-content: center;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.6);
+    --my-color: var(--my-color);
+    font-size: 1.5rem;
+}
+
+footer {
+    margin-top: 20%;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.6);
+    --my-color: var(--my-color);
+    text-align: center;
+}
+
+#menu {
+    display: flex;
+    justify-content: center;
+    background-color: rgba(255, 255, 255, 0.6);
+    width: 10%;
+    margin-left: 45%;
+    margin-right: 45%;
+    text-align: center;
+    --my-color: var(--my-color);
+    box-sizing: content-box;
+    border-radius: 45%;
+}
+
+#menu:hover {
+    transition: all;
+    transition: ease-in-out;
+    transition-duration: 600ms; /* js lärt mig något nytt*/
+    box-shadow: 5px 4px 4px rgba(8, 8, 40, 0.921);
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-gap: 20px;
+    background-color: rgba(8, 8, 40, 0.921);
+    padding: 20px;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.grid-container > div {
+    background-color: rgba(255, 255, 255, 0.6);
+    text-align: center;
+    padding: 20px 0;
+    font-size: 25px;
+}
+
+.kyckling {
+    height: 38%;
+    width: 44%;
+    margin-top: 18%;
+}
+
+.avokadosallad {
+    height: 36%;
+    width: 46%;
+    margin-top: 20%;
+}
+
+.sallad {
+    height: 34%;
+    width: 58%;
+    margin-top: 18%;
+}
+
+.farinata {
+    height: 35%;
+    width: 52%;
+    margin-top: 24%;
+}
+
+.taramasalata {
+    height: 40%;
+    width: 46%;
+    margin-top: 6%;
+}
+
+.menu {
+    grid-row: 1 / span 2;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-gap: 10px;
+    background-color: rgba(8, 8, 40, 0.921);
+    margin-left: 30%;
+    margin-right: 30%;
+    --paddin: var(--my-color);
+    color: white;
+    width: 40%;
+    height: 20%;
+}
+
+#reserve {
+    display: flex;
+    justify-content: center;
+    background-color: rgba(255, 255, 255, 0.6);
+    width: 10%;
+    margin-left: 45%;
+    margin-right: 45%;
+    text-align: center;
+    --my-color: var(--my-color);
+    border-radius: 45%;
+}
+
+#reserve:hover {
+    transition: all;
+    transition: ease-in-out;
+    transition-duration: 600ms; /* js lärt mig något nytt*/
+    box-shadow: 5px 4px 4px rgba(8, 8, 40, 0.921);
+}
+
+@media screen and (min-width: 50px) {
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
